@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Sale</title>
+</head>
+<body>
+    <h2>Update Sale</h2>
+    <form method="POST">
+        <label>Sale Date:</label>
+        <input type="date" name="sale_date" value="{{ sale[1] }}" required><br>
+
+        <label>Customer ID:</label>
+        <input type="number" name="customer_id" value="{{ sale[2] }}" required><br>
+
+        <label>Employee ID:</label>
+        <input type="number" name="employee_id" value="{{ sale[3] }}" required><br>
+
+        <button type="submit">Update Sale</button>
+    </form>
+    <br>
+    <a href="{{ url_for('sales_page') }}">Back to Sales</a>
+</body>
+</html>
