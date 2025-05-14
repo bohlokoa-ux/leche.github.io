@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Inventory</h2>
+<table>
+  <tr>
+    <th>Product Name</th>
+    <th>Brand</th>
+    <th>Price (M)</th>
+    <th>Stock Quantity</th>
+  </tr>
+  {% for item in inventory %}
+  <tr>
+    <td><a href="/product/{{ item[0] }}">{{ item[1] }}</a></td>
+    <td>{{ item[2] }}</td>
+    <td>M {{ item[3] }}</td>
+    <td>{{ item[4] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
