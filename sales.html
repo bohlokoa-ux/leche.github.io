@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Sales</h2>
+<table>
+  <tr>
+    <th>ID</th><th>Date</th><th>Customer</th><th>Employee</th>
+  </tr>
+  {% for sale in sales %}
+  <tr>
+    <td>{{ sale[0] }}</td>
+    <td>{{ sale[1] }}</td>
+    <td>{{ sale[2] }}</td>
+    <td>{{ sale[3] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
+
