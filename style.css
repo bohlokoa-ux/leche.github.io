@@ -1,0 +1,79 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation */
+h1 {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #0055a5;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Page content */
+h2 {
+    color: #003366;
+    margin-top: 30px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td:hover {
+    background-color: #e0f0ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #666;
+    font-size: 13px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
